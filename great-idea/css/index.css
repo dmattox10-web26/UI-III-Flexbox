@@ -63,4 +63,125 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+nav {
+	padding-bottom: 30px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+ul {
+	display: flex;
+}
+
+li {
+	list-style-type: none;
+}
+
+a.nav {
+	text-decoration: none;
+	color: gray;  
+  	display: flex;
+  	padding: 1rem 8rem 1rem 0rem;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+h1 {
+	font-size: 600%;
+}
+
+.catch {
+	margin-left: 12rem;
+	margin-top: 1rem;
+	text-align: center;
+}
+.catchy {
+	padding-top: 3rem;
+}
+
+.content {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+section {
+	line-height: 12px;
+	margin-bottom: 1rem;
+}
+
+.twins {
+	width: 50%;
+	padding: 1em;
+	float: left;
+	margin-bottom: 1rem;
+	line-height: 16px;
+}
+
+.triplets {
+	width: 33%;
+	padding: 1em;
+	float: left;
+	margin-bottom: 1rem;
+	line-height: 16px;
+}
+
+.quadruplets {
+	width: 25%;
+	padding: 1em;
+	float: left;
+	margin-bottom: 1rem;
+	line-height: 16px;
+}
+
+.bar {
+	display: block;
+  	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.button {
+	padding-top: 3rem;
+	text-align: center;
+}
+
+.button a {
+	margin-top: 1rem;
+	padding: 0rem 2rem 0rem 2rem;
+	border: 2px solid black;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+.mail a {
+	text-decoration: none;
+	color: black;
+}
+.separate:after{
+	content:"";
+	height: 8rem;
+	display: flex;
+}
+
+hr { 
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+  } 
+
+footer {
+	margin-top: 12em;
+	text-align: center;
+}
