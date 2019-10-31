@@ -98,12 +98,13 @@ h1 {
 }
 
 .catch {
-	margin-left: 12rem;
 	margin-top: 1rem;
 	text-align: center;
+	display: flex;
 }
 .catchy {
 	padding-top: 3rem;
+	display: flex;
 }
 
 .content {
@@ -114,11 +115,12 @@ h1 {
 section {
 	line-height: 12px;
 	margin-bottom: 1rem;
+	display: flex;
 }
 
 .twins {
 	width: 47%;
-	float: left;
+	display: flex;
 	margin: 1em;
 	line-height: 16px;
 }
@@ -140,10 +142,8 @@ section {
 }
 
 .bar {
-	display: block;
-  	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
+	display: flex;
+  	margin: 0 auto;
 }
 
 .button {
@@ -169,17 +169,6 @@ section {
 	text-decoration: none;
 	color: black;
 }
-.separate:after{
-	content:"";
-	height: 8rem;
-	display: flex;
-}
-
-.push:after{
-	content:"";
-	height: 41rem;
-	display: flex;
-}
 
 hr { 
 	display: block;
@@ -192,7 +181,6 @@ hr {
   } 
 
 footer {
-	margin-top: 12em;
 	text-align: center;
 }
 
@@ -218,7 +206,6 @@ footer {
 
 .default {
 	display: inline-block;
-	
 }
 
 .default li {
