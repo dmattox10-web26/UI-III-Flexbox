@@ -49,7 +49,10 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
+  	padding:0;
+  	margin:0;
+  	max-width:100%;
 }
 
 html, body {
@@ -64,33 +67,41 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-nav {
-	padding-bottom: 30px;
-	margin-top: 2%;
-	margin-bottom: 2%;
-}
 
-ul {
+section {
 	display: flex;
 }
-
-li {
-	list-style-type: none;
+header nav {
+	width: 100%;
 }
 
-a.nav {
+nav {
+  	display: flex;
+  	justify-content: space-between;
+	/*align-items: center;*/
+	margin: 1rem 0;  
+}
+
+.links {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 100%;	
+}
+
+.logo img {
+	max-width: 100%;
+}
+
+nav a {
+	display: flex;
+	justify-content: space-between;
 	text-decoration: none;
 	color: gray;  
-  	display: flex;
-  	padding: 1rem 8rem 1rem 0rem;
-}
-
-.right {
-	float: right;
-}
-
-.left {
-	float: left;
 }
 
 h1 {
@@ -98,29 +109,33 @@ h1 {
 }
 
 .catch {
-	margin-left: 12rem;
 	margin-top: 1rem;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 .catchy {
 	padding-top: 3rem;
+	display: flex;
 }
 
 .content {
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 2%;
+	padding-right: 2%;
 }
-
-section {
-	line-height: 12px;
-	margin-bottom: 1rem;
+.tagline {
+	width: 50%;
+	display: flex;
+	margin: 1em;
+	line-height: 16px;
+	justify-content: space-evenly;
 }
 
 .twins {
-	width: 47%;
-	float: left;
+	width: 50%;
 	margin: 1em;
 	line-height: 16px;
+	justify-content: space-evenly;
 }
 
 .triplets {
@@ -140,10 +155,8 @@ section {
 }
 
 .bar {
-	display: block;
-  	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
+	display: flex;
+  	margin: 0 auto;
 }
 
 .button {
@@ -169,17 +182,6 @@ section {
 	text-decoration: none;
 	color: black;
 }
-.separate:after{
-	content:"";
-	height: 8rem;
-	display: flex;
-}
-
-.push:after{
-	content:"";
-	height: 41rem;
-	display: flex;
-}
 
 hr { 
 	display: block;
@@ -192,7 +194,6 @@ hr {
   } 
 
 footer {
-	margin-top: 12em;
 	text-align: center;
 }
 
@@ -217,8 +218,8 @@ footer {
 }
 
 .default {
-	display: inline-block;
-	
+	display: flex;
+	flex-direction: column;
 }
 
 .default li {
