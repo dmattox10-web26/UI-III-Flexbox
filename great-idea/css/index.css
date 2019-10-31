@@ -67,6 +67,10 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+section {
+	display: flex;
+}
 header nav {
 	width: 100%;
 }
@@ -108,6 +112,7 @@ h1 {
 	margin-top: 1rem;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 }
 .catchy {
 	padding-top: 3rem;
@@ -118,18 +123,19 @@ h1 {
 	padding-left: 2%;
 	padding-right: 2%;
 }
-
-section {
-	line-height: 12px;
-	margin-bottom: 1rem;
-	display: flex;
-}
-
-.twins {
-	width: 47%;
+.tagline {
+	width: 50%;
 	display: flex;
 	margin: 1em;
 	line-height: 16px;
+	justify-content: space-evenly;
+}
+
+.twins {
+	width: 50%;
+	margin: 1em;
+	line-height: 16px;
+	justify-content: space-evenly;
 }
 
 .triplets {
